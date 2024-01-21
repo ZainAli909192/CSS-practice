@@ -1,0 +1,64 @@
+
+.center{
+    position:absolute;
+    top: 30%;
+    left: 30%;
+    border-radius: 50%;
+}
+span{
+    font-size: 2rem;
+    top: -15px;
+    position: absolute;
+}
+
+.ring{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    box-shadow: 1px 3px red;
+
+    /* for different type of loaders  */
+
+    /* box-shadow: 0px 4px red,4px 0px yellow,-0px -4px green; */
+    
+    /* border-left: 2px solid red;
+    border-right: 2px solid green; */
+    
+    background:transparent ;
+    animation: load 1s ease-in-out  infinite ;
+
+}
+.text{
+    width: 300px;
+        height: 300px;
+        border-radius: 50%;
+        color: black;
+        position: absolute;
+        top: 50%;
+        left: 0;
+        text-align: center;
+        
+    }
+    @keyframes load {
+        0%{
+            transform:rotate(90deg);
+    }
+    50%{
+        transform:rotate(180deg);
+    }
+    75%{
+        transform:rotate(260deg);
+    }
+    100%{
+        transform:rotate(360deg);
+   
+    }
+    
+}
+.content{
+    background-color: aqua;
+    display: none;
+}
+.show{
+    display: block;
+}
