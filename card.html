@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css
+
+
+
+">
+</head>
+<style>
+    body {
+        background-color: rgb(145, 145, 196);
+    }
+
+    .container {
+        background-color: rgb(196, 174, 174);
+        width: 200px;
+        height: auto;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+    }
+    
+    .container::before {
+        border-top-left-radius:10px ;
+        border-top-right-radius:10px ;
+        content: "";
+        margin-top: 8px;
+        position: absolute;
+        top: 0;
+        height: 120px;
+        width: 220px;
+        background-color: rgb(12, 221, 92);
+
+    }
+    img {
+        position: relative;
+        opacity: 100;
+        width: 200px;
+        height: 200px;
+        background-color: aqua;
+        border-radius: 50%;
+
+    }
+    i {
+        color: black;
+    }
+    h3 {
+        font-weight: 500;
+    }
+    h4 {
+        font-weight: 400;
+    }
+</style>
+
+<body>
+    <div class="container">
+
+
+        <img src="back.jpg" alt="">
+        <div class="title">
+
+            <h3>OPPO F19</h3>
+            <h4>
+
+                web developer
+            </h4>
+
+        </div>
+
+        <div class="icons">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star-half-stroke"></i>
+            <i class="fa-solid fa-empty"></i>
+        </div>
+        <button>Submit</button>
+    </div>
+</body>
+
+<!-- popup code  -->
+
+        window.addEventListener("load", () => {
+            setTimeout(() => {
+                popupScreen.classList.add("active");
+            }, 2000); //Popup the screen in 02 seconds after the page is loaded.
+        });
+
+</html>
