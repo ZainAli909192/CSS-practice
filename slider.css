@@ -1,0 +1,19 @@
+.slider-container {
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .card {
+    width: 300px;
+    margin: 0 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
